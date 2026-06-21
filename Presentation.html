@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20-Day Progress Report: React & Next.js Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+      .slide {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        padding: 3rem;
+        box-sizing: border-box;
+      }
+      .slide.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slide1" class="slide active">
+      <div>
+        <div class="text-teal-400 font-semibold uppercase tracking-wider text-sm mb-2">
+          Progress Report
+        </div>
+        <h1 class="text-4xl font-bold text-white mb-4">
+          My 20-Day Development Journey
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl">
+          A clear look at what I have built, what I have learned, and how I
+          transitioned from React basics to modern Next.js workflows.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-auto">
+        <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-xl">
+          <div class="text-teal-400 font-bold text-xl mb-2">Phase 1</div>
+          <h3 class="text-white font-semibold text-lg mb-1">
+            React Foundation
+          </h3>
+          <p class="text-slate-400 text-sm">
+            Learning React by rebuilding TyInteractive and replicating premium
+            layouts.
+          </p>
+        </div>
+        <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-xl">
+          <div class="text-teal-400 font-bold text-xl mb-2">Phase 2</div>
+          <h3 class="text-white font-semibold text-lg mb-1">
+            Next.js Transition
+          </h3>
+          <p class="text-slate-400 text-sm">
+            Moving to Next.js and completing a template conversion test for
+            Mostafa Bhai.
+          </p>
+        </div>
+        <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-xl">
+          <div class="text-teal-400 font-bold text-xl mb-2">Phase 3</div>
+          <h3 class="text-white font-semibold text-lg mb-1">
+            Advanced Concepts
+          </h3>
+          <p class="text-slate-400 text-sm">
+            Building the Northbeam Dashboard prototype to master app
+            authentication.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center text-sm text-slate-500 border-t border-slate-800 pt-4">
+        <div>Slide 1 of 5</div>
+        <div>Use Left/Right Arrows or Click Navigation Below</div>
+      </div>
+    </div>
+
+    <div id="slide2" class="slide">
+      <div>
+        <div class="text-teal-400 font-semibold uppercase tracking-wider text-sm mb-2">
+          Phase 1: React Basics
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-6">
+          TYInteractive Migration & Stripe Experiment
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-auto">
+        <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700/30 space-y-4">
+          <div class="border-l-2 border-teal-500 pl-4">
+            <h4 class="text-white font-semibold text-lg">
+              TyInteractive SPA Rebuild
+            </h4>
+            <p class="text-slate-400 text-sm mt-1">
+              Converted our old WordPress website into a clean Single Page
+              Application (SPA).
+            </p>
+          </div>
+          <div class="w-full h-56 bg-slate-900 rounded-lg overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img
+              src="./TYInteractive.png"
+              alt="TyInteractive Project Screenshot"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 pl-2">
+            <li>Changed heavy PHP templates into reusable React components.</li>
+            <li>Used React hooks to handle user interactions instantly.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700/30 space-y-4">
+          <div class="border-l-2 border-teal-500 pl-4">
+            <h4 class="text-white font-semibold text-lg">
+              Stripe Pricing Page Challenge
+            </h4>
+            <p class="text-slate-400 text-sm mt-1">
+              Recreated the complex Stripe pricing layout from scratch to test
+              UI skills.
+            </p>
+          </div>
+          <div class="w-full h-56 bg-slate-900 rounded-lg overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img
+              src="./StripePricing.png"
+              alt="Stripe Pricing Project Screenshot"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 pl-2">
+            <li>Learned browser window APIs and responsive tracking.</li>
+            <li>
+              Applied layout optimization tricks for fast browser rendering.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center text-sm text-slate-500 border-t border-slate-800 pt-4">
+        <div>Slide 2 of 5</div>
+        <div>React & Frontend Optimization</div>
+      </div>
+    </div>
+
+    <div id="slide3" class="slide">
+      <div>
+        <div class="text-teal-400 font-semibold uppercase tracking-wider text-sm mb-2">
+          Phase 2: Next.js Framework
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Moving to Next.js & Mentor Evaluation
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-auto items-center max-w-5xl mx-auto">
+        <div class="space-y-4">
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">
+              The Transition to Next.js
+            </h3>
+            <p class="text-slate-400 text-sm">
+              Moved into Next.js to leverage server-side features and modern
+              file-based routing protocols.
+            </p>
+          </div>
+
+          <div class="border-t border-slate-700/50 pt-4">
+            <h3 class="text-lg font-semibold text-teal-400 mb-1">
+              Mostafa Bhai's Evaluation Task
+            </h3>
+            <p class="text-slate-400 text-sm mb-3">
+              Converted a raw HTML template into a full Next.js application
+              structure to prove fundamental knowledge.
+            </p>
+
+            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800 text-xs text-slate-300">
+              <span class="text-emerald-400 font-semibold">✓ Done:</span> Broken
+              down flat HTML into modular layouts and pages.
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-80 bg-slate-900 rounded-xl overflow-hidden border border-slate-700 flex items-center justify-center">
+          <img
+            src="./DevFlow.png"
+            alt="HTML to Next.js Template Conversion Screenshot"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center text-sm text-slate-500 border-t border-slate-800 pt-4">
+        <div>Slide 3 of 5</div>
+        <div>Next.js Project Validation</div>
+      </div>
+    </div>
+
+    <div id="slide4" class="slide">
+      <div>
+        <div class="text-teal-400 font-semibold uppercase tracking-wider text-sm mb-2">
+          Current Phase: Real-World Prototype
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-6">
+          Northbeam Dashboard & Authentication
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-auto items-center">
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-white">
+            The Project: Northbeam Dashboard
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Building a multi-page operational dashboard application prototype to
+            study advanced global state and route shielding mechanisms.
+          </p>
+
+          <div class="bg-teal-950/30 border border-teal-800/50 p-4 rounded-lg">
+            <div class="text-teal-400 font-semibold text-sm mb-1">
+              Active Focus: User Authentication
+            </div>
+            <p class="text-slate-400 text-xs">
+              Learning how to securely store user tokens, handle persistent
+              logins, and protect secure dashboard layouts.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="w-full h-56 bg-slate-900 rounded-xl overflow-hidden border border-slate-700 flex items-center justify-center">
+            <img
+              src="./northBeams.png"
+              alt="Northbeam Prototype Screenshot"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="bg-slate-800/40 border border-slate-700/50 p-4 rounded-xl space-y-3">
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>Component Architecture</span><span>100%</span>
+              </div>
+              <div class="w-full bg-slate-700 h-1.5 rounded-full">
+                <div class="bg-teal-500 h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>Authentication Loops</span><span>In Progress</span>
+              </div>
+              <div class="w-full bg-slate-700 h-1.5 rounded-full">
+                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 45%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center text-sm text-slate-500 border-t border-slate-800 pt-4">
+        <div>Slide 4 of 5</div>
+        <div>Active Practical Application</div>
+      </div>
+    </div>
+
+    <div id="slide5" class="slide">
+      <div>
+        <div class="text-teal-400 font-semibold uppercase tracking-wider text-sm mb-2">
+          Next Steps
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-6">
+          Immediate Next Objectives
+        </h2>
+      </div>
+
+      <div class="space-y-4 my-auto max-w-2xl mx-auto">
+        <div class="flex items-start bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
+          <div class="bg-slate-900 text-teal-400 font-bold rounded-md px-3 py-1 mr-4">
+            1
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Complete Authentication</h4>
+            <p class="text-slate-400 text-sm mt-0.5">
+              Finish the login security loops inside the Northbeam Dashboard
+              prototype.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
+          <div class="bg-slate-900 text-teal-400 font-bold rounded-md px-3 py-1 mr-4">
+            2
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Dynamic Data Binding</h4>
+            <p class="text-slate-400 text-sm mt-0.5">
+              Connect the static layout fields to dynamic database endpoints for
+              live testing.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
+          <div class="bg-slate-900 text-teal-400 font-bold rounded-md px-3 py-1 mr-4">
+            3
+          </div>
+          <div>
+            <h4 class="text-white font-semibold">Mentor Code Review</h4>
+            <p class="text-slate-400 text-sm mt-0.5">
+              Go through the entire codebase with Mostafa Bhai to clean and
+              optimize my work before adding more features.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center text-sm text-slate-500 border-t border-slate-800 pt-4">
+        <div>Slide 5 of 5</div>
+        <div>Future Roadmap</div>
+      </div>
+    </div>
+
+    <div class="fixed bottom-12 right-12 flex space-x-2 bg-slate-900/80 backdrop-blur border border-slate-700 p-2 rounded-lg">
+      <button onclick="prevSlide()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded text-sm transition">
+        &larr; Prev
+      </button>
+      <button onclick="nextSlide()" class="px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded text-sm transition">
+        Next &rarr;
+      </button>
+    </div>
+
+    <script>
+      let currentSlide = 1;
+      const totalSlides = 5;
+
+      function showSlide(index) {
+        if (index < 1 || index > totalSlides) return;
+
+        document
+          .querySelectorAll(".slide")
+          .forEach((s) => s.classList.remove("active"));
+        document.getElementById(`slide${index}`).classList.add("active");
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        if (currentSlide < totalSlides) showSlide(currentSlide + 1);
+      }
+
+      // Key correction: reset layout tracking arrays correctly 
+      function prevSlide() {
+        if (currentSlide > 1) showSlide(currentSlide - 1);
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") nextSlide();
+        if (e.key === "ArrowLeft") prevSlide();
+      });
+    </script>
+  </body>
+</html>
