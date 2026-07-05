@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20-Day Progress Report: React & Next.js Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+      .slide {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        padding: 3rem;
+        box-sizing: border-box;
+      }
+      .slide.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slides-container"></div>
+
+    <div class="fixed bottom-12 right-12 flex space-x-2 bg-slate-900/80 backdrop-blur border border-slate-700 p-2 rounded-lg z-50">
+      <button onclick="SliderController.prev()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded text-sm transition">
+        &larr; Prev
+      </button>
+      <button onclick="SliderController.next()" class="px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded text-sm transition">
+        Next &rarr;
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
